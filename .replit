@@ -1,0 +1,36 @@
+run = ["bash", "main.sh"]
+
+entrypoint = "main.sh"
+
+[env]
+
+#！若使用远程数据库，请先删掉以下本地数据库连接配置(11~21行)
+#！！使用远程数据库，为优化性能，你甚至可以把replit.nix的pkgs.less和pkgs.postgresql_14都删掉
+
+
+#！本地数据库连接配置：
+PGDATA = "/home/runner/${REPL_SLUG}/data"
+DB_TYPE = "postgres"
+DB_HOST = "127.0.0.1"
+DB_PORT = "5432"
+DB_USER = "alist"
+DB_PASS = "alist-admin"
+DB_NAME = "alist"
+DB_TABLE_PREFIX = "alist_"
+DB_SLL_MODE = "disable"
+#！END
+
+
+#！添加远程数据库连接参数：
+#！在"Secrets(Environment variables)添加以下环境变量"
+################################################
+#！    KEY        |      value(example)
+#！DB_TYPE        |      postgres或mysql
+#！DB_HOST        |      服务器地址
+#！DB_PORT        |      服务器端口
+#！DB_USER        |      数据库用户名
+#！DB_PASS        |      数据库密码
+#！DB_SLL_MODE    |      数据库SLL方式  pgSQL和mysql不一样.见下
+################################################
+#！！SLL方式：pgSQL：一般是require  | mysql：true或false
+#
