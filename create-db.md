@@ -1,3 +1,5 @@
+### 先 RUN，初始化pgSQL
+
 ### 在Shell界面
 
 ### Enter后,执行以下命令
