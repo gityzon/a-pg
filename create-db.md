@@ -1,4 +1,4 @@
-### 先 RUN，初始化pgSQL
+#### 先 RUN，初始化pgSQL，然后它会停止
 
 ### 在Shell界面
 
@@ -9,7 +9,7 @@ psql -h 127.0.0.1
 create user alist with password 'alist-admin';
 CREATE DATABASE alist OWNER alist;
 GRANT ALL PRIVILEGES ON DATABASE alist to alist;
-
+exit
 ### 之后去除main.sh最后一行的注释，RUN！
 
 #### 以下是数据库连接信息（虽然都在.replit文件配置好了，不需要手动加参数）：
