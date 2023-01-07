@@ -18,4 +18,4 @@ fi
 
 #！！待数据库信息配置好之后，取消注释以下行，并“RUN"
 #！！初始密码在console的"Initial password"一行
-#./alist -server
+#./alist server
