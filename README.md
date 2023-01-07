@@ -18,15 +18,7 @@ Local PostgreSQL_v14 as high-performance database.
 
 ### Deploy:
 
-   Choose "Import from GitHub".
-
-<a href="https://replit.com/github/gityzon/a-pg">
-  <img alt="Run on Repl.it" src="https://replit.com/badge/github/github/gityzon" style="height: 40px; width: 190px;" />
-</a>
-
-If you use mobile phone,please set the UA of Browser as "Desktop" or maybe replit can not work.
-
-### For edu:
+Note: If you use mobile phone,please set the UA of Browser as "Desktop" or maybe replit can not work.
 
 1. Creat a Bash-language project.
 
